@@ -4,8 +4,9 @@
 <head>
   <meta charset="utf-8">
 
-  <title>My Resume</title>
-
+  <title>Nathan Brown's Resume</title>
+  <meta name="viewport" content="width=device width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
 
   <!--[if lt IE 9]>
@@ -14,6 +15,96 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <div class="container">
+    <div class="top-nav">
+      <nav>
+        <a href=index.html>Home</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#projects">Projects</a>        
+        <a href="#contact">Contact</a>
+      </nav>
+    </div> <!-- top-nav -->
+
+    <section class="top-content">
+      <div class="headshot">
+        <img src="img/headshot.jpg" alt="Headshot">
+      </div> <!-- headshot -->
+      <div class="headline">
+        <h1>Nathan Brown</h1>
+        <p>Full Stack Web Developer</p>
+      </div> <!-- headline -->      
+    </section> <!-- top-content -->
+
+    <section class="middle-content">
+      <div class="text-container">
+        <h2>Software Engineering</h2>
+        <p>Current Lambda student with a passion for software, and web development. Deep diving into all the skills reqired to be the very best software engineer around. With experience from reputable employers, such as:</p>
+        <ul>
+          <li>Compufuze - Computer Technician</li>
+          <li>BCC - I.T. Specialist</li>
+          <li>Department of Defense - Logistics Technician</li>
+        </ul>
+      </div> <!-- text-contaner -->      
+      <div class="text-container">
+        <h2 id="expertise">Expertise</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Less</li>
+          <li>Javascript</li>
+          <li>Python</li>
+          <li>SQL</li>
+          <li>PHP</li>
+        </ul>
+      </div> <!-- text-container -->
+    </section> <!-- middle-content -->
+
+    <section class="bottom-content">
+      <h2 id="projects">Projects</h2>
+      <h3>User Interface Challenge</h3>
+      <a href="https://github.com/scottynate05/Sprint-Challenge--User-Interface/tree/nathan-brown"><img src="img/sprint.png" alt="Lambda Sprint Challenge"></a>
+      <h3>Services Webpage</h3>
+      <a href="https://github.com/scottynate05/UI-III-Flexbox/tree/nathan-brown"><img src="img/services.png" alt="Services Webpage"></a>
+      <h3>Sweet Eats Bakery Website</h3>
+      <a href="https://codepen.io/scottynate05/pen/qBEMZBM"><img src="img/sweets.png" alt="Sweet Eats"></a>
+    </section> <!-- bottom-content -->
+    
+    <div id="contact" class="contact-form">
+      <form action="action_page.php">
+  
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+      <label for="country">Country</label>
+      <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="italy">Italy</option>
+          <option value="japan">Japan</option>
+          <option value="uk">UK</option>
+          <option value="usa">USA</option>
+      </select>
+  
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit">
+  
+      </form>
+    </div> <!-- contact-form -->
+
+    <footer class="top-nav">
+      <nav>
+        <a href=index.html>Home</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#projects">Projects</a>        
+        <a href="#contact">Contact</a>
+      </nav>
+    </footer>
+
+  </div> <!-- container -->
 </body>
 </html>

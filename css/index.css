@@ -1,1 +1,333 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  background-color: gray;
+}
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+.top-nav nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.top-nav a {
+  color: white;
+  text-decoration: none;
+}
+.top-nav a:hover {
+  background: white;
+  color: black;
+  padding: 5px;
+  border-radius: 7px;
+}
+.headshot img {
+  display: flex;
+  justify-content: flex-start;
+  width: 300px;
+  border-radius: 10px;
+}
+.top-content {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+.top-content .headline {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.headline h1 {
+  font-size: 4rem;
+}
+.headline p {
+  font-size: 2rem;
+}
+.middle-content {
+  margin: 2% 0;
+}
+.middle-content .text-container {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.text-container h2 {
+  font-size: 1.7rem;
+}
+.text-container p {
+  font-size: 1.2rem;
+  margin: 2% 0;
+}
+.text-container ul {
+  font-size: 1.2rem;
+  margin: 2% 0;
+}
+.bottom-content {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 600px;
+  margin: 2% 0;
+}
+.bottom-content h2 {
+  font-size: 1.7rem;
+}
+.bottom-content h3 {
+  font-size: 1.2rem;
+  margin: 2% 0;
+}
+.bottom-content img {
+  width: 600px;
+  border-radius: 20px;
+}
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: white;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  color: white;
+  background-color: black;
+}
+.container {
+  padding: 20px;
+}
+@media only screen and (max-width: 500px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .top-nav {
+    font-size: 1.5rem;
+  }
+  .top-content {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .headshot img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .headline {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .headline h1 {
+    font-size: 6.5rem;
+  }
+  .headline p {
+    font-size: 4rem;
+  }
+  .text-container {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .text-container h2 {
+    font-size: 3rem;
+  }
+  .text-container p {
+    font-size: 2rem;
+    margin: 2% 0;
+  }
+  .text-container ul {
+    font-size: 2rem;
+    margin: 2% 0;
+  }
+  .bottom-content {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 600px;
+    margin: 2% 0;
+  }
+  .bottom-content h2 {
+    font-size: 2.5rem;
+  }
+  .bottom-content h3 {
+    font-size: 2rem;
+    margin: 2% 0;
+  }
+  .bottom-content img {
+    width: 600px;
+  }
+  .contact-form {
+    font-size: 2.5rem;
+  }
+  input[type=text],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  input[type=submit] {
+    background-color: white;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type=submit]:hover {
+    color: white;
+    background-color: black;
+  }
+  .container {
+    padding: 20px;
+  }
+}
